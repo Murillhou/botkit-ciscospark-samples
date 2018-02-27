@@ -4,21 +4,22 @@
   "description": "Cisco Spark Bots built with the Botkit framework",
   "main": "helloworld.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env SPARK_TOKEN=MmM0YzkzYTAtYzk2Yi00MDE4LTgyYTctZjYzMWE3MmNmODIwNDZhMDE3MDctYTlh PUBLIC_URL=https://clonebot-pablo.herokuapp.com SECRET=empty node helloworld.js"
   },
   "keywords": [
     "ciscospark",
     "botkit",
     "devnet"
   ],
-  "author": "Stève Sfartz (Cisco DevNet) <stsfartz@cisco.com>",
+  "author": "Pablo Murillo <pmurillo@makenai.es>",
   "license": "MIT",
   "dependencies": {
     "botkit": "^0.5.7",
-    "node-env-file": "^0.1.8",
     "ciscospark-websocket-events": "^1.1.0",
+    "cross-env": "^5.1.3",
     "debug": "^2.3.2",
     "node-emoji": "^1.5.1",
+    "node-env-file": "^0.1.8",
     "request": "^2.81.0"
   }
 }
