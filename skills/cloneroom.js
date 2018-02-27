@@ -4,13 +4,12 @@
 const CiscoSpark = require('node-ciscospark'),
     async = require('async');
 
-    const spark = new CiscoSpark(process.env.SPARK_TOKEN);
+const spark = new CiscoSpark(process.env.SPARK_TOKEN);
 
 module.exports = function (controller) {
 
     controller.hears(["clone", "clone room", "clonar", "clonar sala"], 'direct_message,direct_mention', function (bot, message) {
         let email = message.user;
-
         bot.startConversation(message, function (err, convo) {
             var question = "What name do you want for the new room?";
             convo.ask(question, [
