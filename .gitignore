@@ -1,11 +1,2 @@
-# Node artefacts
 node_modules
-npm-debug.log
-
-# IDE artefacts
 .vscode
-.editorconfig
-
-# WebSocket artefacts
-device.json
-
